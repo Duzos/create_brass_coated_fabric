@@ -69,12 +69,12 @@ dependencies {
 
     modImplementation "com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim" //{ transitive = false }
     modImplementation "com.jozufozu.flywheel:flywheel-fabric-${flywheel_minecraft_version}:${flywheel_version}"
-    modImplementation "com.tterrag.registrate:Registrate:${registrate_version}"
+    // modImplementation "com.tterrag.registrate:Registrate:${registrate_version}" // No registrate fabric
 
     //modRuntime "curse.maven:rubidium-574856:4024781"
     //modRuntime "curse.maven:configured-457570:4010624"
 
-    modCompileOnly "mezz.jei:jei-${minecraft_version}:${jei_version}:api"
+    modCompileOnly "mezz.jei:jei-${minecraft_version}-fabric-api:${jei_version}"
     //modRuntime "mezz.jei:jei-${minecraft_version}:${jei_version}"
     // Uncomment the following line to enable the deprecated Fabric API modules.
     // These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
